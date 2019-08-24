@@ -4,11 +4,17 @@
   "main": "src/index.js",
   "author": "Romain <romain.vairo@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build:dev": "node_modules/.bin/webpack --mode development --module-bind js=babel-loader",
+    "build:prod": "node_modules/.bin/webpack --module-bind js=babel-loader",
+    "start": "webpack-dev-server --open --inline --content-base dist/ --mode development --module-bind js=babel-loader"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "babel-loader": "^8.0.6",
     "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
   }
 }

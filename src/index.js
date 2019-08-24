@@ -6,4 +6,4 @@ console.log('salut les titans');
 
 
 const sum = (x, y ) => x + y;
-console.log(sum(2,2));
+console.log(sum(20,40));
